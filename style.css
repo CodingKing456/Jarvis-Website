@@ -1,0 +1,180 @@
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+    color:white;
+}
+.download{top:50%; 
+ color:whitesmoke;
+    position: absolute;
+    right:45.55%;
+}
+body{
+    background:black;
+    overflow:hidden;
+}
+
+.machine{
+    width:100vw;
+    height:100vh;
+    position:relative;
+}
+
+.cont{
+    display:flex;
+    align-items:center;
+    gap:15px;
+    position:fixed;
+    z-index:1000;
+}
+
+.clock{
+    top:20px;
+    left:20px;
+}
+
+.internet{
+    top:100px;
+    left:20px;
+}
+
+.battery{
+    top:20px;
+    right:130px;
+}
+
+.icon{
+    width:60px;
+    height:60px;
+}
+
+#time,
+#internet,
+#battery{
+    font-size:28px;
+}
+/* WEATHER */
+
+.temp{
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    width: 260px;
+
+    text-align: right;
+
+    z-index: 1000;
+}
+
+.temp p{
+    margin: 5px 0;
+    font-size: 16px;
+}
+
+#weatherIcon{
+    width: 70px;
+}
+
+/* MAKE ME SMALL */
+
+.small_jarvis{
+    position: fixed;
+
+    right: 20px;
+    bottom: 10px;
+
+    z-index: 1000;
+}
+
+.small_jarvis img{
+    width: 160px;
+}
+
+.small_jarvis p{
+    font-size: 16px;
+    text-align: center;
+}
+#heart{
+    position:fixed;
+    width:350px;
+    left:50%;
+    top:40%;
+    transform:translate(-50%,-50%);
+}
+
+#start_jarvis_btn,
+#stop_jarvis_btn{
+    position:fixed;
+    bottom:20px;
+    left:50%;
+    transform:translateX(-50%);
+
+    width:200px;
+    height:200px;
+
+    border:none;
+    background:transparent;
+    cursor:pointer;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    z-index:1000;
+}
+
+#stop_jarvis_btn{
+    display:none;
+}
+
+#start_jarvis_btn img,
+#stop_jarvis_btn img{
+    width:200px;
+    height:200px;
+}
+
+#start_jarvis_btn p,
+#stop_jarvis_btn p{
+    position:absolute;
+    font-size:20px;
+    font-weight:bold;
+}
+
+.jarvis_setup{
+    position:fixed;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+
+    width:450px;
+    padding:25px;
+
+    display:flex;
+    flex-direction:column;
+    gap:10px;
+
+    background:#111;
+    border:2px solid #444;
+    border-radius:20px;
+
+    z-index:2000;
+}
+
+.jarvis_setup input{
+    padding:10px;
+    border:none;
+    border-radius:8px;
+    color:black;
+}
+
+#sub_btn{
+    margin-top:10px;
+    padding:12px;
+    border:none;
+    border-radius:8px;
+    background:#0066ff;
+    cursor:pointer;
+    font-size:18px;
+}

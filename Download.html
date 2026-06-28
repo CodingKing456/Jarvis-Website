@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>J.A.R.V.I.S. (Just a Rather Very Intelligent System)</title>
+<style>
+body{
+    margin:0;
+    font-family:Segoe UI, sans-serif;
+    background: radial-gradient(circle at top,#050b1a,#000000);
+    color:#0c0e0e;
+}
+nav{
+    background: rgba(0,0,0,0.8);
+    padding: 15px 20px;
+    display:flex;
+    justify-content: space-between;
+    align-items:center;
+    border-bottom: 1px solid white;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin-right:15px;
+    font-weight:bold;
+}
+
+nav a:hover{
+    color:rgb(201, 214, 214);
+}
+header{
+    text-align:center;
+    padding:30px;
+}
+
+h1{
+    font-size:48px;
+    text-shadow:0 0 20px whitesmoke;
+    letter-spacing:2px;
+}
+
+.container{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:20px;
+    padding:20px;
+}
+
+.card{
+    background: black;
+    border:1px solid white;
+    border-radius:15px;
+    padding:20px;
+    backdrop-filter:blur(10px);
+    box-shadow:0 0 20px green;
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:scale(1.03);
+    box-shadow:0 0 25px white;
+}
+
+h2{
+    margin:0;
+    color:white;
+}
+
+p{
+    font-size:14px;
+    color:#bffcff;
+} 
+a.download{
+    display:inline-block;
+    margin-top:12px;
+    padding:10px 16px;
+    border-radius:25px;
+    background: white;
+    color:#000;
+    font-weight:bold;
+    text-decoration:none;
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+    <div><strong>J.A.R.V.I.S</strong></div>
+    <div>
+        <a href="index.html">Home</a>
+    </div>
+</nav>
+
+<header>
+<h1><font color="white">J.A.R.V.I.S (Just a Rather Very Intelligent System)</font></h1>
+</header>
+
+<div class="container" id="downloads">
+
+<div class="card">
+<h2>automation.py</h2>
+<p>System control module for lock, shutdown, restart, sleep, browser actions and volume control.</p>
+<a class="download" href="./automation.py" download>Download</a>
+</div>
+
+<div class="card">
+<h2>brain.py</h2>
+<p>AI powered by Gemini API. Uses Gemini and requires active internet connection.</p>
+<a class="download" href="./brain.py" download>Download</a>
+</div>
+
+<div class="card">
+<h2>ear.py</h2>
+<p>Voice recognition engine with speaker verification using Resemblyzer.</p>
+<a class="download" href="./ear.py" download>Download</a>
+</div>
+
+<div class="card">
+<h2>mouth.py</h2>
+<p>Speaking function with male voice output.</p>
+<a class="download" href="./mouth.py" download>Download</a>
+</div>
+
+<div class="card">
+<h2>run_jarvis.bat</h2>
+<p>Batch file to run all Python modules automatically at startup.</p>
+<a class="download" href="./run_jarvis.bat" download>Download</a>
+</div>
+
+<div class="card">
+<h2>Voices</h2>
+<p>Folder containing owner voice file named "owner.wav". Must stay in same directory and the voice file should be replaced with the new owner's voice.</p>
+<a class="download" href="./voices/" download>Download</a>
+</div>
+</div>
+<center><img src="./iron_man.gif" height="500" width="475"></center>
+</body>
+</html>
