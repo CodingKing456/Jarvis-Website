@@ -1,0 +1,13 @@
+#!/bin/bash
+
+cd "$HOME/Desktop/jarvis" || {
+    echo "Could not find the jarvis folder. Edit the 'cd' line in this script to match your setup."
+    read -p "Press Enter to exit..."
+    exit 1
+}
+
+export GEMINI_API_KEY="paste-your-new-key-here"
+
+python3 main.py
+
+read -p "Press Enter to exit..."
