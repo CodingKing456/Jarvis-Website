@@ -1,6 +1,6 @@
 console.log("Jarvis Loaded");
 //weather
-const WEATHER_API_KEY = "OPen Weather API key";
+const WEATHER_API_KEY = "483d2cdfae46be11fb49873e7acd931b";
 
 function weather(city) {
 
